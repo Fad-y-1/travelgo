@@ -1,0 +1,113 @@
+/* ========== HURGHADA & SHARM PAGES ========== */
+
+.banner {
+  height: 260px;
+  color: #fff;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  align-items: end;
+}
+.banner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(3, 27, 52, 0.75),
+    rgba(3, 27, 52, 0.12)
+  );
+}
+.banner .container {
+  position: relative;
+  padding-bottom: 34px;
+}
+.banner h1 {
+  font-size: 38px;
+  font-weight: 900;
+}
+.banner p {
+  font-size: 14px;
+  color: #eef6ff;
+}
+.attractions-banner {
+  background-image:
+    linear-gradient(90deg, rgba(3, 27, 52, 0.75), rgba(3, 27, 52, 0.12)),
+    url("../images/sharm-hero.jpg");
+}
+.tours-wrap,
+.attractions {
+  background: #fff;
+  padding: 32px 0 44px;
+}
+.small-heading {
+  font-weight: 900;
+  margin-bottom: 18px;
+}
+.tour-list {
+  display: grid;
+  gap: 18px;
+}
+.tour-card {
+  display: grid;
+  grid-template-columns: 170px 1fr 90px 115px;
+  gap: 20px;
+  align-items: center;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 13px;
+  box-shadow: var(--soft-shadow);
+  transition: 0.28s;
+}
+.tour-card img {
+  width: 170px;
+  height: 110px;
+  border-radius: 7px;
+  object-fit: cover;
+  cursor: zoom-in;
+}
+.tour-card h3 {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+.tour-card p {
+  font-size: 13px;
+  color: var(--muted);
+  max-width: 560px;
+}
+.meta {
+  display: flex;
+  gap: 14px;
+  margin-top: 10px;
+  color: #697789;
+  font-size: 12px;
+  flex-wrap: wrap;
+}
+.tour-price {
+  text-align: right;
+  font-weight: 900;
+  font-size: 22px;
+}
+.tour-price span {
+  display: block;
+  color: var(--muted);
+  font-size: 10px;
+  font-weight: 600;
+}
+.view-btn {
+  background: var(--primary);
+  color: #fff;
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 12px;
+  font-weight: 900;
+  text-align: center;
+  min-height: 44px;
+}
+.view-btn:hover,
+.blue-full:hover,
+.premium-book:hover {
+  background: var(--primary-dark);
+}

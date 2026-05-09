@@ -1,0 +1,101 @@
+/* ========== HELP CENTER PAGE ========== */
+
+.help-page {
+  background: #f4f8fc;
+}
+
+.help-hero {
+  min-height: 280px;
+  display: flex;
+  align-items: center;
+  background:
+    linear-gradient(135deg, rgba(0, 59, 115, 0.92), rgba(0, 166, 214, 0.72)),
+    url("../images/hurghada-orange-bay-island-trip.jpg") center/cover;
+  color: #fff;
+}
+
+.help-hero span {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.16);
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  padding: 8px 12px;
+  border-radius: 999px;
+  font-weight: 800;
+  margin-bottom: 12px;
+}
+
+.help-hero h1 {
+  font-size: clamp(38px, 7vw, 74px);
+  line-height: 1;
+  margin-bottom: 12px;
+}
+
+.help-hero p {
+  font-size: 16px;
+  max-width: 620px;
+}
+
+.help-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+  padding-top: 38px;
+  padding-bottom: 44px;
+}
+
+.help-card {
+  background: #fff;
+  border: 1px solid #e3edf8;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.07);
+}
+
+.help-card h2 {
+  color: #003b73;
+  font-size: 24px;
+  margin-bottom: 14px;
+}
+
+.help-card h3 {
+  font-size: 15px;
+  color: #10233f;
+  margin: 14px 0 6px;
+}
+
+.help-card p,
+.help-card li {
+  color: #536276;
+  line-height: 1.7;
+  font-size: 14px;
+}
+
+.help-card ol {
+  padding-left: 18px;
+}
+
+@media (max-width: 1024px) {
+  .premium-book-card {
+    max-height: none;
+    overflow: visible;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-grid,
+  .help-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer {
+    padding-top: 24px;
+  }
+
+  .footer h3 {
+    margin-top: 4px;
+  }
+
+  .help-hero {
+    min-height: 240px;
+  }
+}

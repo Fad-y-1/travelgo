@@ -1,0 +1,230 @@
+/* ========== TOUR DETAILS PAGE ========== */
+
+.premium-trip-page {
+  background: #f4f7fb;
+  padding: 28px 0 44px;
+}
+.premium-breadcrumb {
+  font-size: 13px;
+  color: #1f6fd1;
+  margin-bottom: 18px;
+}
+.premium-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(310px, 360px);
+  gap: 24px;
+}
+.premium-main-card,
+.premium-book-card,
+.premium-include-card {
+  background: #fff;
+  border: 1px solid #e7edf5;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
+}
+.premium-main-card {
+  overflow: hidden;
+}
+.premium-main-photo {
+  width: 100%;
+  height: clamp(300px, 42vw, 520px);
+  object-fit: cover;
+  display: block;
+  cursor: zoom-in;
+}
+.premium-gallery {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  padding: 14px;
+}
+.premium-gallery img {
+  height: clamp(76px, 9vw, 118px);
+  width: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 3px solid transparent;
+  cursor: pointer;
+}
+.premium-gallery img:hover {
+  border-color: #2274e0;
+}
+.premium-tabs {
+  display: flex;
+  gap: 34px;
+  border-bottom: 1px solid #e7edf5;
+  padding: 0 22px;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+.premium-tabs span {
+  padding: 18px 0;
+  font-weight: 800;
+  color: #344054;
+}
+.premium-tabs span.active {
+  color: #1f6fd1;
+  border-bottom: 3px solid #1f6fd1;
+}
+.premium-overview {
+  padding: 22px;
+  color: #4b5b70;
+  font-size: 14px;
+}
+.premium-facts {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+  margin-top: 18px;
+}
+.premium-fact {
+  border: 1px solid #e7edf5;
+  border-radius: 10px;
+  padding: 14px;
+}
+.premium-fact b {
+  display: block;
+  color: #1f2937;
+  margin-bottom: 4px;
+}
+.premium-book-card {
+  padding: 22px;
+  position: sticky;
+  top: 96px;
+}
+.premium-badge {
+  display: inline-block;
+  background: #fff3db;
+  color: #c27600;
+  padding: 7px 12px;
+  border-radius: 8px;
+  font-weight: 800;
+  margin-bottom: 16px;
+}
+.premium-book-card h1 {
+  font-size: 28px;
+  line-height: 1.15;
+  margin-bottom: 12px;
+  color: #111827;
+}
+.premium-stars {
+  color: #ffb31a;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+.premium-info {
+  display: grid;
+  gap: 14px;
+  color: #344054;
+  margin-bottom: 22px;
+}
+.premium-price {
+  border-top: 1px solid #e7edf5;
+  padding-top: 20px;
+  margin-top: 20px;
+  color: #667085;
+}
+.premium-price strong {
+  font-size: 36px;
+  color: #1f6fd1;
+  margin-right: 8px;
+}
+.premium-book,
+.premium-wishlist {
+  margin-top: 16px;
+  background: #1f6fd1;
+  color: #fff;
+  border-radius: 8px;
+  padding: 15px;
+  width: 100%;
+  font-weight: 900;
+  font-size: 15px;
+}
+.premium-wishlist {
+  margin-top: 10px;
+  background: #fff;
+  color: #1f6fd1;
+  border: 1px solid #1f6fd1;
+}
+.traveler-box,
+.date-box {
+  margin: 14px 0;
+  padding: 14px;
+  border: 1px solid #e7edf5;
+  border-radius: 10px;
+  background: #f8fbff;
+}
+.traveler-box label,
+.date-box label {
+  display: block;
+  font-weight: 800;
+  margin-bottom: 10px;
+  color: #344054;
+}
+.traveler-control {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+.traveler-control button {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #1f6fd1;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 900;
+}
+.traveler-control span {
+  min-width: 42px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 900;
+}
+.date-box input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+.live-total {
+  margin-top: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 800;
+  color: #344054;
+}
+.live-total strong {
+  color: #1f6fd1;
+  font-size: 24px;
+}
+.premium-include-card {
+  margin-top: 16px;
+  padding: 22px;
+}
+.premium-include-card h3 {
+  margin: 0 0 14px;
+}
+.premium-include-card ul {
+  list-style: none;
+  margin: 0 0 24px;
+  padding: 0;
+}
+.premium-include-card li {
+  margin: 10px 0;
+  color: #344054;
+}
+.premium-include-card .yes::before {
+  content: "✓";
+  color: #16a34a;
+  font-weight: 900;
+  margin-right: 10px;
+}
+.premium-include-card .no::before {
+  content: "×";
+  color: #111827;
+  font-weight: 900;
+  margin-right: 10px;
+}

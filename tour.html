@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#003b73" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Playfair+Display:wght@700;800;900&family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/common.css" />
+    <link rel="stylesheet" href="assets/css/tour.css" />
+    <link rel="stylesheet" href="assets/css/common-responsive.css" />
+    <title>Trip Details - TravelGo</title>
+  </head>
+  <body data-page="tour">
+    <header class="topbar">
+      <div class="container nav">
+        <a
+          class="brand brand-premium"
+          href="index.html"
+          aria-label="TravelGo Home"
+        >
+          <div class="boat-logo-mark">
+            <svg
+              viewBox="0 0 64 64"
+              fill="none"
+              aria-label="TravelGo boat logo"
+            >
+              <path
+                d="M32 8L32 36"
+                stroke="#004b93"
+                stroke-width="4"
+                stroke-linecap="round"
+              />
+              <path d="M32 11C43 17 47 25 48 36H32V11Z" fill="#00a6d6" />
+              <path d="M32 16C22 21 18 28 17 36H32V16Z" fill="#004b93" />
+              <path
+                d="M12 38H52L46 49C44.5 52 41.5 54 38 54H26C22.5 54 19.5 52 18 49L12 38Z"
+                fill="#003b73"
+              />
+              <path
+                d="M16 44C22 47 28 47 34 44C40 41 46 41 52 44"
+                stroke="#ffffff"
+                stroke-width="3"
+                stroke-linecap="round"
+              />
+            </svg>
+          </div>
+          <div class="logo-text">
+            <div class="logo-title">TravelGo</div>
+            <div class="logo-subtitle">Sea Trips</div>
+          </div>
+        </a>
+        <button class="mobile-btn" id="menuBtn" aria-label="Open navigation">
+          ☰
+        </button>
+        <nav class="links" id="links">
+          <a class="" href="index.html">Home</a>
+          <a class="" href="hurghada.html">Hurghada</a>
+          <a class="" href="sharm.html">Sharm El Sheikh</a>
+          <a class="" href="attractions.html">Top Attractions</a>
+          <a class="login-link" href="login.html">Login</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="premium-trip-page">
+      <div class="container premium-breadcrumb">
+        <a href="index.html">Home</a> / <span id="tourCrumb">Trip Details</span>
+      </div>
+      <div class="container premium-layout" id="tourDetails"></div>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div>
+          <h3>Help Center</h3>
+          <a href="help.html#faq">FAQ</a>
+          <a href="help.html#booking-guide">Booking Guide</a>
+          <a href="help.html#cancellation-policy">Cancellation Policy</a>
+          <a href="help.html#contact-us">Contact Us</a>
+        </div>
+        <div>
+          <h3>About Us</h3>
+          <p class="footer-about">
+            TravelGo creates professional Red Sea trips, snorkeling tours,
+            diving experiences, cruises, and beach adventures in Hurghada and
+            Sharm El Sheikh.
+          </p>
+          <a href="help.html#terms">Terms &amp; Conditions</a>
+          <a href="help.html#privacy">Privacy Policy</a>
+        </div>
+        <div>
+          <h3>Contact Us</h3>
+          <p class="footer-contact-line">
+            <span class="footer-icon">📞</span> 012 3456 7890
+          </p>
+          <p class="footer-contact-line">
+            <span class="footer-icon">✉</span> info@travelgo.com
+          </p>
+          <p class="footer-contact-line">
+            <span class="footer-icon">📍</span> 15 El Kawthar Street, Hurghada,
+            Red Sea, Egypt
+          </p>
+        </div>
+      </div>
+      <div class="copy">© 2026 TravelGo. All rights reserved.</div>
+    </footer>
+    <div class="toast" id="toast"></div>
+    <div class="lightbox" id="lightbox">
+      <button class="lightbox-close" id="lightboxClose">×</button
+      ><img id="lightboxImg" alt="Preview" />
+    </div>
+    <script src="assets/js/common.js"></script>
+    <script src="assets/js/tour.js"></script>
+  </body>
+</html>
